@@ -1,3 +1,4 @@
+import 'package:appadaptiveui/features/widgets/adaptive_layout.dart';
 import 'package:appadaptiveui/features/widgets/desktop_layout/desktop_layout.dart';
 import 'package:appadaptiveui/features/widgets/mobile_layout/mobile_layout.dart';
 import 'package:appadaptiveui/features/widgets/tablet_layout/tablet_layout.dart';
@@ -10,16 +11,10 @@ class HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          if (constraints.maxWidth > 900) {
-            return DesktopLayout();
-          } else if (constraints.maxWidth > 600) {
-            return TabletLayout();
-          } else {
-            return MobileLayout();
-          }
-        },
+      child: AdaptiveLayout(
+        mobileLayout: (context) => MobileLayout(),
+        tabletLayout: (context) => TabletLayout(),
+        desktopLayout: (context) => DesktopLayout(),
       ),
     );
   }

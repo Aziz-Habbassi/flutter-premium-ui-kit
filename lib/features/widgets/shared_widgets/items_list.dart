@@ -1,5 +1,5 @@
 import 'package:appadaptiveui/core/models/drawer_item.dart';
-import 'package:appadaptiveui/features/widgets/custom_drawer_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/custom_drawer_item.dart';
 import 'package:flutter/material.dart';
 
 class ItemsList extends StatelessWidget {

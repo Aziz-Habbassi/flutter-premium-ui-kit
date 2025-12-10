@@ -1,5 +1,5 @@
-import 'package:appadaptiveui/features/widgets/custom_item.dart';
-import 'package:appadaptiveui/features/widgets/item2.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/custom_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/item2.dart';
 import 'package:flutter/material.dart';
 
 class DesktopWidget extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/custom_darwer.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/custom_darwer.dart';
 import 'package:appadaptiveui/features/widgets/desktop_layout/desktop_widget.dart';
 import 'package:appadaptiveui/features/widgets/tablet_layout/tablet_layout.dart';
 import 'package:flutter/material.dart';

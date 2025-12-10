@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/items_list.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/items_list.dart';
 import 'package:flutter/material.dart';
 
 class CustomDarwer extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/custom_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/custom_item.dart';
 import 'package:flutter/material.dart';
 
 class CustomSliversGrid extends StatelessWidget {

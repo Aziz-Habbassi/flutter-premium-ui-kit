@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/item2.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/item2.dart';
 import 'package:flutter/material.dart';
 
 class CustomList extends StatelessWidget {
