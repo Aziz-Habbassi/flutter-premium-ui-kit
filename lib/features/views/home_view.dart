@@ -1,5 +1,5 @@
-import 'package:appadaptiveui/features/widgets/custom_darwer.dart';
-import 'package:appadaptiveui/features/widgets/home_body.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/custom_darwer.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
