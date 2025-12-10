@@ -11,7 +11,7 @@ final GoRouter router = GoRouter(
       },
       routes: [
         GoRoute(path: "/", builder: (context, state) => HomeBody()),
-        GoRoute(path: "/Profile", builder: (context, state) => ProfilView()),
+        GoRoute(path: "/profile", builder: (context, state) => ProfilView()),
         GoRoute(path: "/Settings", builder: (context, state) => HomeBody()),
         GoRoute(path: "/Logout", builder: (context, state) => HomeBody()),
       ],

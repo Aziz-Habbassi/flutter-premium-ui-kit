@@ -1,4 +1,5 @@
 import 'package:appadaptiveui/core/models/drawer_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/bounce_tap.dart';
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_drawer_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,9 +14,9 @@ class ItemsList extends StatelessWidget {
       DrawerItem(
         icon: Icons.person,
         text: "P R O F I L",
-        ontap: () {
+        ontap: () async {
           HapticFeedback.lightImpact();
-          context.go("/Profile");
+          context.go('/profile');
         },
       ),
       DrawerItem(
@@ -26,12 +27,16 @@ class ItemsList extends StatelessWidget {
       DrawerItem(icon: Icons.settings, text: "S E T T I N G S", ontap: () {}),
       DrawerItem(icon: Icons.logout, text: "L O G O U T", ontap: () {}),
     ];
+
     return ListView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
       itemCount: items.length,
       itemBuilder: (context, index) {
-        return CustomDrawerItem(drawerItem: items[index]);
+        return BounceTap(
+          onTap: items[index].ontap,
+          child: CustomDrawerItem(drawerItem: items[index]),
+        );
       },
     );
   }
