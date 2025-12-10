@@ -1,6 +1,7 @@
 import 'package:appadaptiveui/core/models/drawer_item.dart';
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_drawer_item.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 
 class ItemsList extends StatelessWidget {
@@ -12,7 +13,10 @@ class ItemsList extends StatelessWidget {
       DrawerItem(
         icon: Icons.person,
         text: "P R O F I L",
-        ontap: () => context.go("/Profile"),
+        ontap: () {
+          HapticFeedback.lightImpact();
+          context.go("/Profile");
+        },
       ),
       DrawerItem(
         icon: Icons.home,

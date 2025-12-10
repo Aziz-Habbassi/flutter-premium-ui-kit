@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MobileProfil extends StatelessWidget {
-  const MobileProfil({super.key});
+class TabletProfil extends StatelessWidget {
+  const TabletProfil({super.key});
 
   @override
   Widget build(BuildContext context) {
