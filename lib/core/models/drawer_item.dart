@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 class DrawerItem {
   final String text;
   final IconData icon;
-
-  const DrawerItem({required this.text, required this.icon});
+  final VoidCallback ontap;
+  const DrawerItem({
+    required this.text,
+    required this.icon,
+    required this.ontap,
+  });
 }

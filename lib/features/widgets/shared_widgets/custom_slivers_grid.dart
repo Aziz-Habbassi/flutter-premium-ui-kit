@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/shared_widgets/custom_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/item1.dart';
 import 'package:flutter/material.dart';
 
 class CustomSliversGrid extends StatelessWidget {
@@ -13,7 +13,7 @@ class CustomSliversGrid extends StatelessWidget {
         mainAxisSpacing: 16,
       ),
       itemBuilder: (context, index) {
-        return CustomItem();
+        return Item1();
       },
       itemCount: 4,
     );

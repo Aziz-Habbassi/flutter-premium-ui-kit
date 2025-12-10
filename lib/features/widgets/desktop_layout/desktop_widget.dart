@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/shared_widgets/custom_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/item1.dart';
 import 'package:appadaptiveui/features/widgets/shared_widgets/item2.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +9,7 @@ class DesktopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        Expanded(flex: 2, child: CustomItem()),
+        Expanded(flex: 2, child: Item1()),
         SizedBox(height: 16),
         Expanded(child: Item2()),
       ],

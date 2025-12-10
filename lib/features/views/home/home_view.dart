@@ -1,10 +1,9 @@
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_darwer.dart';
-import 'package:appadaptiveui/features/widgets/shared_widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
-  const HomeView({super.key});
-
+  const HomeView({super.key, required this.child});
+  final Widget child;
   @override
   State<HomeView> createState() => _HomeViewState();
 }
@@ -18,7 +17,7 @@ class _HomeViewState extends State<HomeView> {
       key: scaffoldKey,
       drawer: CustomDarwer(),
       backgroundColor: Color(0xffDBDBDB),
-      appBar: MediaQuery.of(context).size.width <= 932
+      appBar: MediaQuery.of(context).size.width - 32 <= 1024
           ? AppBar(
               backgroundColor: Colors.black,
               leading: IconButton(
@@ -30,7 +29,7 @@ class _HomeViewState extends State<HomeView> {
               ),
             )
           : null,
-      body: HomeBody(),
+      body: widget.child,
     );
   }
 }

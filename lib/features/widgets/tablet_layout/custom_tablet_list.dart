@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/shared_widgets/custom_item.dart';
+import 'package:appadaptiveui/features/widgets/shared_widgets/item1.dart';
 import 'package:flutter/material.dart';
 
 class CustomTabletList extends StatelessWidget {
@@ -15,7 +15,7 @@ class CustomTabletList extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: AspectRatio(aspectRatio: 1, child: CustomItem()),
+              child: AspectRatio(aspectRatio: 1, child: Item1()),
             );
           },
         ),

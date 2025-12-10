@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/views/home_view.dart';
+import 'package:appadaptiveui/core/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +10,8 @@ class AdaptiveUi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeView(),
+    return MaterialApp.router(
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
     );
   }
