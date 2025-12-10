@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/features/widgets/adaptive_layout.dart';
+import 'package:appadaptiveui/features/premiumFeatures/adaptive_layout.dart';
 import 'package:appadaptiveui/features/widgets/desktop_layout/desktop_layout.dart';
 import 'package:appadaptiveui/features/widgets/mobile_layout/mobile_layout.dart';
 import 'package:appadaptiveui/features/widgets/tablet_layout/tablet_layout.dart';

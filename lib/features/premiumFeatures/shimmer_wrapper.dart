@@ -31,11 +31,11 @@ class _ShimmerWrapperState extends State<ShimmerWrapper> {
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
       duration: const Duration(milliseconds: 800),
-      child: _loading ? _buildShimmerPlaceholder() : widget.child,
+      child: _loading ? _shimmerPlaceholder() : widget.child,
     );
   }
 
-  Widget _buildShimmerPlaceholder() {
+  Widget _shimmerPlaceholder() {
     return Shimmer.fromColors(
       baseColor: Colors.grey[300]!,
       highlightColor: Colors.grey[100]!,

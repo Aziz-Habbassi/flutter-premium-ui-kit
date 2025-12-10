@@ -44,9 +44,8 @@ class _BounceTapState extends State<BounceTap>
   }
 
   Future<void> _handleTap() async {
-    // Bounce down
     await _controller.forward();
-    // Bounce up
+
     await _controller.reverse();
 
     HapticFeedback.lightImpact(); // haptic effect

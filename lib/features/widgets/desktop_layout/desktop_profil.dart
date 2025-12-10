@@ -1,5 +1,5 @@
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_darwer.dart';
-import 'package:appadaptiveui/features/widgets/shared_widgets/shimmer_wrapper.dart';
+import 'package:appadaptiveui/features/premiumFeatures/shimmer_wrapper.dart';
 import 'package:appadaptiveui/features/widgets/tablet_layout/tablet_profil.dart';
 import 'package:flutter/material.dart';
 

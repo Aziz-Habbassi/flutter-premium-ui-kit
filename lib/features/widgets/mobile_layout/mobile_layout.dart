@@ -1,6 +1,6 @@
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_list.dart';
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_slivers_grid.dart';
-import 'package:appadaptiveui/features/widgets/shared_widgets/shimmer_wrapper.dart';
+import 'package:appadaptiveui/features/premiumFeatures/shimmer_wrapper.dart';
 import 'package:flutter/material.dart';
 
 class MobileLayout extends StatelessWidget {
