@@ -1,8 +1,7 @@
 import 'package:appadaptiveui/core/models/drawer_item.dart';
-import 'package:appadaptiveui/features/widgets/shared_widgets/bounce_tap.dart';
+import 'package:appadaptiveui/features/premiumFeatures/bounce_tap.dart';
 import 'package:appadaptiveui/features/widgets/shared_widgets/custom_drawer_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 
 class ItemsList extends StatelessWidget {
@@ -15,7 +14,6 @@ class ItemsList extends StatelessWidget {
         icon: Icons.person,
         text: "P R O F I L",
         ontap: () async {
-          HapticFeedback.lightImpact();
           context.go('/profile');
         },
       ),

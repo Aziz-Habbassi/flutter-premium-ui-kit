@@ -49,7 +49,7 @@ class _BounceTapState extends State<BounceTap>
     // Bounce up
     await _controller.reverse();
 
-    HapticFeedback.lightImpact(); // premium effect
+    HapticFeedback.lightImpact(); // haptic effect
 
     widget.onTap(); // your navigation or action
   }
