@@ -1,4 +1,4 @@
-import 'package:appadaptiveui/core/utils/app_routes.dart';
+import 'package:appadaptiveui/services/routing/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
