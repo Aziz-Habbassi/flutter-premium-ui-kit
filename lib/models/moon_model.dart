@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class MoonModel {
-  final String text;
-  final IconData icon;
-  final VoidCallback ontap;
-  const MoonModel({
-    required this.text,
-    required this.icon,
-    required this.ontap,
+  final String copyright, date, explanation, title, url;
+  MoonModel({
+    required this.copyright,
+    required this.date,
+    required this.explanation,
+    required this.title,
+    required this.url,
   });
 }
